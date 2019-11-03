@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.in28minutes.springboot.web.SpringBootFirstWebApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.639 s - in com.in28minutes.springboot.web.SpringBootFirstWebApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.289 s - in com.in28minutes.springboot.web.SpringBootFirstWebApplicationTests
