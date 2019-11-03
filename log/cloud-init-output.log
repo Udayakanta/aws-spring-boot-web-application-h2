@@ -1,0 +1,64 @@
+Cloud-init v. 0.7.6 running 'init-local' at Mon, 28 Oct 2019 05:29:02 +0000. Up 6.59 seconds.
+Cloud-init v. 0.7.6 running 'init' at Mon, 28 Oct 2019 05:29:02 +0000. Up 6.79 seconds.
+ci-info: +++++++++++++++++++++++Net device info++++++++++++++++++++++++
+ci-info:  Device   Up     Address          Mask          Hw-Address    
+ci-info:    lo    True   127.0.0.1      255.0.0.0            .         
+ci-info:   eth0   True  172.31.85.41  255.255.240.0  12:02:1b:d5:14:b8 
+ci-info: +++++++++++++++++++++++++++++++Route info+++++++++++++++++++++++++++++++
+ci-info:  Route    Destination      Gateway        Genmask      Interface  Flags 
+ci-info:    0        0.0.0.0      172.31.80.1      0.0.0.0         eth0      UG  
+ci-info:    1    169.254.169.254    0.0.0.0    255.255.255.255     eth0      UH  
+ci-info:    2      172.31.80.0      0.0.0.0     255.255.240.0      eth0      U   
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+The key fingerprint is:
+SHA256:u5BENLiT/QIMsYKn2DmdarFRxf7AOUvORHikEt6CsvY root@ip-172-31-85-41
+The key's randomart image is:
++---[RSA 2048]----+
+|  o. ==          |
+|.o.+o++.         |
+|= *o+O..         |
+|o* **oX          |
+|+.* oB.*S        |
+|. .* .=.o.       |
+|  +E  o..        |
+| .     . .       |
+|        .        |
++----[SHA256]-----+
+Generating public/private dsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+The key fingerprint is:
+SHA256:jYMNy1j9qhluvcWl+hCz+fWSoHE9A9D7UMkYHtIKUXE root@ip-172-31-85-41
+The key's randomart image is:
++---[DSA 1024]----+
+|      .o++E+ .   |
+|      ...++.+    |
+|      o..o.o     |
+|     + =.++      |
+|    . + S o=.    |
+|        .Ooo=    |
+|      ..=++..+   |
+|     ..+o= .o.   |
+|     .+ ooo  ..  |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
+The key fingerprint is:
+SHA256:HYcU3wE8NUcDtA1pa9iYdXYtBGA8mgiiGMUK9XlUXzw root@ip-172-31-85-41
+The key's randomart image is:
++---[ECDSA 256]---+
+| +o   ....===OBo+|
+|o o..o   +o+E==*+|
+|o+ .o... o+.X+=o.|
+|+    .. o. * +   |
+|        S . .    |
+|                 |
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+Cloud-init v. 0.7.6 running 'modules:config' at Mon, 28 Oct 2019 05:29:03 +0000. Up 7.75 seconds.
+Cloud-init v. 0.7.6 running 'modules:final' at Mon, 28 Oct 2019 05:29:04 +0000. Up 8.55 seconds.

@@ -1,0 +1,20 @@
+[UTC Oct 28 05:29:51] info     : monit: generated unique Monit id b05caa932e0513246eec1d3d77c4bd47 and stored to '/root/.monit.id'
+[UTC Oct 28 05:29:55] info     : Starting monit HTTP server at [localhost:2812]
+[UTC Oct 28 05:29:55] info     : monit HTTP server started
+[UTC Oct 28 05:29:55] info     : 'system_ip-172-31-85-41.ec2.internal' Monit started
+[UTC Oct 28 05:34:30] info     : unmonitor service 'tomcat' on user request
+[UTC Oct 28 05:34:30] info     : monit daemon at 3643 awakened
+[UTC Oct 28 05:34:30] info     : Awakened by User defined signal 1
+[UTC Oct 28 05:34:30] info     : 'tomcat' unmonitor action done
+[UTC Oct 28 05:34:33] info     : monitor service 'tomcat' on user request
+[UTC Oct 28 05:34:33] info     : monit daemon at 3643 awakened
+[UTC Oct 28 05:34:33] info     : Awakened by User defined signal 1
+[UTC Oct 28 05:34:33] info     : 'tomcat' monitor action done
+[UTC Oct 28 05:42:08] info     : unmonitor service 'tomcat' on user request
+[UTC Oct 28 05:42:08] info     : monit daemon at 3643 awakened
+[UTC Oct 28 05:42:08] info     : Awakened by User defined signal 1
+[UTC Oct 28 05:42:08] info     : 'tomcat' unmonitor action done
+[UTC Oct 28 05:42:11] info     : monitor service 'tomcat' on user request
+[UTC Oct 28 05:42:11] info     : monit daemon at 3643 awakened
+[UTC Oct 28 05:42:11] info     : Awakened by User defined signal 1
+[UTC Oct 28 05:42:11] info     : 'tomcat' monitor action done

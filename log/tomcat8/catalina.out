@@ -1,0 +1,630 @@
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+28-Oct-2019 05:29:53.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.42
+28-Oct-2019 05:29:53.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 10 2019 23:59:50 UTC
+28-Oct-2019 05:29:53.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.42.0
+28-Oct-2019 05:29:53.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2019 05:29:53.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.14.146-93.123.amzn1.x86_64
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.47.amzn1.x86_64/jre
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_222-b10
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/share/tomcat8
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/share/tomcat8
+28-Oct-2019 05:29:53.716 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2019 05:29:53.946 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:29:54.001 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2019 05:29:54.042 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:29:54.043 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2019 05:29:54.050 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1339 ms
+28-Oct-2019 05:29:54.096 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2019 05:29:54.097 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.42
+28-Oct-2019 05:29:54.126 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/var/lib/tomcat8/webapps/ROOT]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+2019-10-28 05:30:00.227  INFO 3446 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : Starting SpringBootFirstWebApplication v0.0.1-SNAPSHOT on ip-172-31-85-41 with PID 3446 (/var/lib/tomcat8/webapps/ROOT/WEB-INF/classes started by tomcat in /usr/share/tomcat8)
+2019-10-28 05:30:00.246  INFO 3446 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : No active profile set, falling back to default profiles: default
+2019-10-28 05:30:00.356  INFO 3446 --- [ost-startStop-1] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 05:30:02.383  INFO 3446 --- [ost-startStop-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 05:30:02.538  INFO 3446 --- [ost-startStop-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137ms. Found 1 repository interfaces.
+2019-10-28 05:30:03.732  INFO 3446 --- [ost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$733eda9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 05:30:03.818  INFO 3446 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3461 ms
+2019-10-28 05:30:04.427  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-28 05:30:04.427  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2019-10-28 05:30:04.428  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-28 05:30:04.428  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-10-28 05:30:04.428  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-28 05:30:04.428  INFO 3446 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-10-28 05:30:04.428  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-10-28 05:30:04.435  INFO 3446 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2019-10-28 05:30:04.739  INFO 3446 --- [ost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 05:30:05.115  INFO 3446 --- [ost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 05:30:05.281  INFO 3446 --- [ost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-28 05:30:05.448  INFO 3446 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-28 05:30:05.450  INFO 3446 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-28 05:30:05.855  INFO 3446 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-28 05:30:06.136  INFO 3446 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table todo if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table todo (id integer not null, desc varchar(255), is_done boolean not null, target_date timestamp, user varchar(255), primary key (id))
+2019-10-28 05:30:07.433  INFO 3446 --- [ost-startStop-1] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5f05df4f'
+2019-10-28 05:30:07.436  INFO 3446 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 05:30:09.062  INFO 3446 --- [ost-startStop-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 05:30:09.168  WARN 3446 --- [ost-startStop-1] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 05:30:09.835  INFO 3446 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50089fff, org.springframework.security.web.context.SecurityContextPersistenceFilter@616baca4, org.springframework.security.web.header.HeaderWriterFilter@6f42b923, org.springframework.security.web.authentication.logout.LogoutFilter@5cd8154, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a95ced7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54df6a16, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a6f6593, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69846364, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72aa2367, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2986f1f6, org.springframework.security.web.session.SessionManagementFilter@72c04428, org.springframework.security.web.access.ExceptionTranslationFilter@3a0e23a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40bb6060]
+2019-10-28 05:30:09.980  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : ====== Environment and configuration ======
+2019-10-28 05:30:09.981  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : Active profiles: []
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : contextConfigLocation
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.java.launcher
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.base
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.management.compiler
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.useNaming
+2019-10-28 05:30:09.990  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.name
+2019-10-28 05:30:09.991  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.boot.class.path
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.logging.config.file
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.vendor
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.runtime.version
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JDBC_CONNECTION_STRING
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.name
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.scan.StandardJarScanFilter.jarsToScan
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : shared.loader
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.buf.StringCache.byte.enabled
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.language
+2019-10-28 05:30:09.992  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.naming.factory.initial
+2019-10-28 05:30:09.993  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.boot.library.path
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : com.zaxxer.hikari.pool_number
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PID
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.version
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.logging.manager
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.timezone
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.arch.data.model
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.concurrent.ForkJoinPool.common.threadFactory
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.endorsed.dirs
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.cpu.isalist
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.jnu.encoding
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.encoding.pkg
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : package.access
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.separator
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.name
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.class.version
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.country
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.home
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.info
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.version
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : path.separator
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.version
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.printerjob
+2019-10-28 05:30:09.998  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.io.unicode.encoding
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : awt.toolkit
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : package.definition
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.naming.factory.url.pkgs
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.home
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.vendor
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.scan.StandardJarScanFilter.jarsToSkip
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.library.path
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor.url
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.beaninfo.ignore
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.vendor
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : common.loader
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.runtime.name
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.java.command
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.class.path
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.name
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.version
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.home
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.cpu.endian
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.os.patch.level
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.headless
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.io.tmpdir
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor.url.bug
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : server.loader
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.arch
+2019-10-28 05:30:09.999  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.graphicsenv
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.ext.dirs
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.dir
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : line.separator
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.name
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.encoding
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.version
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PATH
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_md
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_USER
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_me
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HISTCONTROL
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_mb
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_PID
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHUTDOWN_VERBOSE
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_NAME
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_AUTO_SCALING_HOME
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_TMPDIR
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_se
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HISTSIZE
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JAVA_HOME
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_ELB_HOME
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JAVA_OPTS
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_us
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : EC2_HOME
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TERM
+2019-10-28 05:30:10.000  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LANG
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_CLOUDWATCH_HOME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_BASE
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : MAIL
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_ue
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LOGNAME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PWD
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : _
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHUTDOWN_WAIT
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESSOPEN
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_CFG
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHELL
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_HOME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_PATH
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : USER
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SECURITY_MANAGER
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : KILL_SLEEP_WAIT
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HOSTNAME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JASPER_HOME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : EC2_AMITOOL_HOME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHLVL
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HOME
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.mvc.view.prefix
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.mvc.view.suffix
+2019-10-28 05:30:10.001  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : logging.level.org.springframework.web
+2019-10-28 05:30:10.002  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : server.port
+2019-10-28 05:30:10.002  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.jpa.show-sql
+2019-10-28 05:30:10.002  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.h2.console.enabled
+2019-10-28 05:30:10.002  INFO 3446 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : ===========================================
+2019-10-28 05:30:10.027  INFO 3446 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : Started SpringBootFirstWebApplication in 11.169 seconds (JVM running for 18.117)
+28-Oct-2019 05:30:10.324 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Oct-2019 05:30:10.391 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/var/lib/tomcat8/webapps/ROOT] has finished in [16,263] ms
+28-Oct-2019 05:30:10.395 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:30:10.427 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:30:10.446 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 16395 ms
+2019-10-28 05:30:39.684  INFO 3446 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 05:30:39.714  INFO 3446 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2019-10-28 05:31:00.536  INFO 3446 --- [io-8080-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+28-Oct-2019 05:34:30.547 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+28-Oct-2019 05:34:30.548 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:34:30.562 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:34:30.564 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+Hibernate: drop table todo if exists
+Hibernate: drop sequence if exists hibernate_sequence
+28-Oct-2019 05:34:30.661 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Oct-2019 05:34:30.672 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:34:30.674 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:34:30.676 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:34:30.677 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+28-Oct-2019 05:34:34.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.42
+28-Oct-2019 05:34:34.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 10 2019 23:59:50 UTC
+28-Oct-2019 05:34:34.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.42.0
+28-Oct-2019 05:34:34.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2019 05:34:34.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.14.146-93.123.amzn1.x86_64
+28-Oct-2019 05:34:34.722 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2019 05:34:34.722 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.47.amzn1.x86_64/jre
+28-Oct-2019 05:34:34.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_222-b10
+28-Oct-2019 05:34:34.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2019 05:34:34.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/share/tomcat8
+28-Oct-2019 05:34:34.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/share/tomcat8
+28-Oct-2019 05:34:34.724 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2019 05:34:34.877 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:34:34.896 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2019 05:34:34.926 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:34:34.928 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2019 05:34:34.930 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1243 ms
+28-Oct-2019 05:34:34.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2019 05:34:34.978 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.42
+28-Oct-2019 05:34:35.002 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/var/lib/tomcat8/webapps/ROOT]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+2019-10-28 05:34:40.959  INFO 4275 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : Starting SpringBootFirstWebApplication v0.0.1-SNAPSHOT on ip-172-31-85-41 with PID 4275 (/var/lib/tomcat8/webapps/ROOT/WEB-INF/classes started by tomcat in /usr/share/tomcat8)
+2019-10-28 05:34:40.968  INFO 4275 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : No active profile set, falling back to default profiles: default
+2019-10-28 05:34:41.075  INFO 4275 --- [ost-startStop-1] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 05:34:42.772  INFO 4275 --- [ost-startStop-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 05:34:42.963  INFO 4275 --- [ost-startStop-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173ms. Found 1 repository interfaces.
+2019-10-28 05:34:44.114  INFO 4275 --- [ost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$810d52ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 05:34:44.206  INFO 4275 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3130 ms
+2019-10-28 05:34:44.788  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-28 05:34:44.789  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2019-10-28 05:34:44.789  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-28 05:34:44.789  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-10-28 05:34:44.789  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-28 05:34:44.789  INFO 4275 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-10-28 05:34:44.790  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-10-28 05:34:45.109  INFO 4275 --- [ost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 05:34:45.419  INFO 4275 --- [ost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 05:34:45.579  INFO 4275 --- [ost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-28 05:34:45.739  INFO 4275 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-28 05:34:45.741  INFO 4275 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-28 05:34:46.125  INFO 4275 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-28 05:34:46.391  INFO 4275 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table todo if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table todo (id integer not null, desc varchar(255), is_done boolean not null, target_date timestamp, user varchar(255), primary key (id))
+2019-10-28 05:34:47.589  INFO 4275 --- [ost-startStop-1] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@9110b12'
+2019-10-28 05:34:47.602  INFO 4275 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 05:34:49.363  INFO 4275 --- [ost-startStop-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 05:34:49.473  WARN 4275 --- [ost-startStop-1] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 05:34:50.150  INFO 4275 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@318bb0cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@59eed792, org.springframework.security.web.header.HeaderWriterFilter@2311818b, org.springframework.security.web.authentication.logout.LogoutFilter@4e9afc23, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@658eeac1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@533471ec, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@10d59aed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e497f5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ba65065, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59e63d43, org.springframework.security.web.session.SessionManagementFilter@1950741d, org.springframework.security.web.access.ExceptionTranslationFilter@7fd3c910, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d26bf8e]
+2019-10-28 05:34:50.288  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : ====== Environment and configuration ======
+2019-10-28 05:34:50.289  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : Active profiles: []
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : contextConfigLocation
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.java.launcher
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.base
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.management.compiler
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.useNaming
+2019-10-28 05:34:50.295  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.name
+2019-10-28 05:34:50.296  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.boot.class.path
+2019-10-28 05:34:50.296  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.logging.config.file
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.vendor
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.runtime.version
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JDBC_CONNECTION_STRING
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.name
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.scan.StandardJarScanFilter.jarsToScan
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : shared.loader
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.buf.StringCache.byte.enabled
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.language
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.naming.factory.initial
+2019-10-28 05:34:50.297  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.boot.library.path
+2019-10-28 05:34:50.298  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : com.zaxxer.hikari.pool_number
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PID
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.version
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.logging.manager
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.timezone
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.arch.data.model
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.concurrent.ForkJoinPool.common.threadFactory
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.endorsed.dirs
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.cpu.isalist
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.jnu.encoding
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.encoding.pkg
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : package.access
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.separator
+2019-10-28 05:34:50.302  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.name
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.class.version
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.country
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.home
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.info
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.version
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : path.separator
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.version
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.printerjob
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.io.unicode.encoding
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : awt.toolkit
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : package.definition
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.naming.factory.url.pkgs
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.home
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.vendor
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.scan.StandardJarScanFilter.jarsToSkip
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.library.path
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor.url
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.beaninfo.ignore
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.vendor
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : common.loader
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.runtime.name
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.java.command
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.class.path
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.name
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.version
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.home
+2019-10-28 05:34:50.303  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.cpu.endian
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.os.patch.level
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.headless
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.io.tmpdir
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor.url.bug
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : server.loader
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.arch
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.graphicsenv
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.ext.dirs
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.dir
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : line.separator
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.name
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.encoding
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.version
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PATH
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_md
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_USER
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_me
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HISTCONTROL
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_mb
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_PID
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHUTDOWN_VERBOSE
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_NAME
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_AUTO_SCALING_HOME
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_TMPDIR
+2019-10-28 05:34:50.304  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_se
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HISTSIZE
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JAVA_HOME
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_ELB_HOME
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JAVA_OPTS
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_us
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : EC2_HOME
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TERM
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LANG
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_CLOUDWATCH_HOME
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_BASE
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : MAIL
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_ue
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LOGNAME
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PWD
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : _
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHUTDOWN_WAIT
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESSOPEN
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_CFG
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHELL
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_HOME
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_PATH
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : USER
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SECURITY_MANAGER
+2019-10-28 05:34:50.305  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : KILL_SLEEP_WAIT
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HOSTNAME
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JASPER_HOME
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : EC2_AMITOOL_HOME
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHLVL
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HOME
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.mvc.view.prefix
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.mvc.view.suffix
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : logging.level.org.springframework.web
+2019-10-28 05:34:50.306  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : server.port
+2019-10-28 05:34:50.312  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.jpa.show-sql
+2019-10-28 05:34:50.312  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.h2.console.enabled
+2019-10-28 05:34:50.312  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.h2.console.settings.trace
+2019-10-28 05:34:50.312  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.h2.console.settings.web-allow-others
+2019-10-28 05:34:50.312  INFO 4275 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : ===========================================
+2019-10-28 05:34:50.335  INFO 4275 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : Started SpringBootFirstWebApplication in 10.689 seconds (JVM running for 17.05)
+28-Oct-2019 05:34:50.633 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Oct-2019 05:34:50.711 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/var/lib/tomcat8/webapps/ROOT] has finished in [15,702] ms
+28-Oct-2019 05:34:50.714 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:34:50.740 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:34:50.742 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 15812 ms
+2019-10-28 05:36:13.306  INFO 4275 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 05:36:13.335  INFO 4275 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2019-10-28 05:36:58.100  INFO 4275 --- [nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+28-Oct-2019 05:42:09.115 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+28-Oct-2019 05:42:09.115 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:42:09.126 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:42:09.130 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+Hibernate: drop table todo if exists
+Hibernate: drop sequence if exists hibernate_sequence
+28-Oct-2019 05:42:09.219 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Oct-2019 05:42:09.231 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:42:09.233 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:42:09.235 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:42:09.235 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=64m; support was removed in 8.0
+28-Oct-2019 05:42:13.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.42
+28-Oct-2019 05:42:13.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 10 2019 23:59:50 UTC
+28-Oct-2019 05:42:13.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.42.0
+28-Oct-2019 05:42:13.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2019 05:42:13.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.14.146-93.123.amzn1.x86_64
+28-Oct-2019 05:42:13.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2019 05:42:13.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.47.amzn1.x86_64/jre
+28-Oct-2019 05:42:13.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_222-b10
+28-Oct-2019 05:42:13.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2019 05:42:13.327 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/share/tomcat8
+28-Oct-2019 05:42:13.327 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/share/tomcat8
+28-Oct-2019 05:42:13.327 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Oct-2019 05:42:13.494 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:42:13.519 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2019 05:42:13.551 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:42:13.554 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2019 05:42:13.558 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1271 ms
+28-Oct-2019 05:42:13.605 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2019 05:42:13.606 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.42
+28-Oct-2019 05:42:13.625 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/var/lib/tomcat8/webapps/ROOT]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+2019-10-28 05:42:19.537  INFO 5178 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : Starting SpringBootFirstWebApplication v0.0.1-SNAPSHOT on ip-172-31-85-41 with PID 5178 (/var/lib/tomcat8/webapps/ROOT/WEB-INF/classes started by tomcat in /usr/share/tomcat8)
+2019-10-28 05:42:19.555  INFO 5178 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : No active profile set, falling back to default profiles: default
+2019-10-28 05:42:19.662  INFO 5178 --- [ost-startStop-1] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 05:42:21.344  INFO 5178 --- [ost-startStop-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 05:42:21.503  INFO 5178 --- [ost-startStop-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145ms. Found 1 repository interfaces.
+2019-10-28 05:42:22.616  INFO 5178 --- [ost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$733eda9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 05:42:22.713  INFO 5178 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3051 ms
+2019-10-28 05:42:23.318  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-28 05:42:23.319  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2019-10-28 05:42:23.319  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-28 05:42:23.319  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-10-28 05:42:23.319  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-28 05:42:23.320  INFO 5178 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-10-28 05:42:23.320  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-10-28 05:42:23.321  INFO 5178 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2019-10-28 05:42:23.644  INFO 5178 --- [ost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 05:42:23.912  INFO 5178 --- [ost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 05:42:24.072  INFO 5178 --- [ost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-28 05:42:24.228  INFO 5178 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-28 05:42:24.231  INFO 5178 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-28 05:42:24.552  INFO 5178 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-28 05:42:24.909  INFO 5178 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table todo if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table todo (id integer not null, desc varchar(255), is_done boolean not null, target_date timestamp, user varchar(255), primary key (id))
+2019-10-28 05:42:26.556  INFO 5178 --- [ost-startStop-1] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5f05df4f'
+2019-10-28 05:42:26.563  INFO 5178 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 05:42:28.205  INFO 5178 --- [ost-startStop-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 05:42:28.316  WARN 5178 --- [ost-startStop-1] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 05:42:29.003  INFO 5178 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1470f151, org.springframework.security.web.context.SecurityContextPersistenceFilter@72c04428, org.springframework.security.web.header.HeaderWriterFilter@3a0e23a8, org.springframework.security.web.authentication.logout.LogoutFilter@74d89c99, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2fe6449b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72aa2367, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27c555d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@616baca4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@188cbd6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50089fff, org.springframework.security.web.session.SessionManagementFilter@6f42b923, org.springframework.security.web.access.ExceptionTranslationFilter@9d4c595, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3eaec19]
+2019-10-28 05:42:29.147  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : ====== Environment and configuration ======
+2019-10-28 05:42:29.147  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : Active profiles: []
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : contextConfigLocation
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.java.launcher
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.base
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.management.compiler
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.useNaming
+2019-10-28 05:42:29.150  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.name
+2019-10-28 05:42:29.151  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.boot.class.path
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.logging.config.file
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.vendor
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.runtime.version
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JDBC_CONNECTION_STRING
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.name
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.scan.StandardJarScanFilter.jarsToScan
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : shared.loader
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.buf.StringCache.byte.enabled
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.language
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.naming.factory.initial
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.boot.library.path
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : com.zaxxer.hikari.pool_number
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PID
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.version
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.logging.manager
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.timezone
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.arch.data.model
+2019-10-28 05:42:29.152  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.util.concurrent.ForkJoinPool.common.threadFactory
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.endorsed.dirs
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.cpu.isalist
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.jnu.encoding
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.encoding.pkg
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : package.access
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.separator
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.name
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.class.version
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.country
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.home
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.info
+2019-10-28 05:42:29.154  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.version
+2019-10-28 05:42:29.155  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : path.separator
+2019-10-28 05:42:29.155  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.version
+2019-10-28 05:42:29.155  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.printerjob
+2019-10-28 05:42:29.155  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.io.unicode.encoding
+2019-10-28 05:42:29.155  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : awt.toolkit
+2019-10-28 05:42:29.155  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : package.definition
+2019-10-28 05:42:29.157  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.naming.factory.url.pkgs
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.home
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.vendor
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : tomcat.util.scan.StandardJarScanFilter.jarsToSkip
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.library.path
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor.url
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.beaninfo.ignore
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.vendor
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : common.loader
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.runtime.name
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.java.command
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.class.path
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.name
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.specification.version
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : catalina.home
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.cpu.endian
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : sun.os.patch.level
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.headless
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.io.tmpdir
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vendor.url.bug
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : server.loader
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : os.arch
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.awt.graphicsenv
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.ext.dirs
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : user.dir
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : line.separator
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.vm.name
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : file.encoding
+2019-10-28 05:42:29.162  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : java.specification.version
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PATH
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_md
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_USER
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_me
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HISTCONTROL
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_mb
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_PID
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHUTDOWN_VERBOSE
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_NAME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_AUTO_SCALING_HOME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_TMPDIR
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_se
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HISTSIZE
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JAVA_HOME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_ELB_HOME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JAVA_OPTS
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_us
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : EC2_HOME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TERM
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LANG
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_CLOUDWATCH_HOME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_BASE
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : MAIL
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESS_TERMCAP_ue
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LOGNAME
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : PWD
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : _
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHUTDOWN_WAIT
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : LESSOPEN
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : TOMCAT_CFG
+2019-10-28 05:42:29.163  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHELL
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : CATALINA_HOME
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : AWS_PATH
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : USER
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SECURITY_MANAGER
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : KILL_SLEEP_WAIT
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HOSTNAME
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : JASPER_HOME
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : EC2_AMITOOL_HOME
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : SHLVL
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : HOME
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.mvc.view.prefix
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.mvc.view.suffix
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : logging.level.org.springframework.web
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : server.port
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.jpa.show-sql
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.h2.console.enabled
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : spring.h2.console.settings.web-allow-others
+2019-10-28 05:42:29.164  INFO 5178 --- [ost-startStop-1] c.i.s.w.EnvironmentConfigurationLogger   : ===========================================
+2019-10-28 05:42:29.184  INFO 5178 --- [ost-startStop-1] c.i.s.web.SpringBootFirstWebApplication  : Started SpringBootFirstWebApplication in 10.899 seconds (JVM running for 17.304)
+28-Oct-2019 05:42:29.480 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Oct-2019 05:42:29.543 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/var/lib/tomcat8/webapps/ROOT] has finished in [15,914] ms
+28-Oct-2019 05:42:29.545 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2019 05:42:29.577 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2019 05:42:29.595 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 16036 ms
+2019-10-28 05:42:57.580  INFO 5178 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 05:42:57.603  INFO 5178 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-10-28 05:43:40.818  INFO 5178 --- [nio-8080-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+Hibernate: select todo0_.id as id1_0_0_, todo0_.desc as desc2_0_0_, todo0_.is_done as is_done3_0_0_, todo0_.target_date as target_d4_0_0_, todo0_.user as user5_0_0_ from todo todo0_ where todo0_.id=?
+Hibernate: delete from todo where id=?
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into todo (desc, is_done, target_date, user, id) values (?, ?, ?, ?, ?)
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+Hibernate: select todo0_.id as id1_0_0_, todo0_.desc as desc2_0_0_, todo0_.is_done as is_done3_0_0_, todo0_.target_date as target_d4_0_0_, todo0_.user as user5_0_0_ from todo todo0_ where todo0_.id=?
+Hibernate: select todo0_.id as id1_0_0_, todo0_.desc as desc2_0_0_, todo0_.is_done as is_done3_0_0_, todo0_.target_date as target_d4_0_0_, todo0_.user as user5_0_0_ from todo todo0_ where todo0_.id=?
+Hibernate: update todo set desc=?, is_done=?, target_date=?, user=? where id=?
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+Hibernate: select todo0_.id as id1_0_0_, todo0_.desc as desc2_0_0_, todo0_.is_done as is_done3_0_0_, todo0_.target_date as target_d4_0_0_, todo0_.user as user5_0_0_ from todo todo0_ where todo0_.id=?
+Hibernate: select todo0_.id as id1_0_0_, todo0_.desc as desc2_0_0_, todo0_.is_done as is_done3_0_0_, todo0_.target_date as target_d4_0_0_, todo0_.user as user5_0_0_ from todo todo0_ where todo0_.id=?
+Hibernate: update todo set desc=?, is_done=?, target_date=?, user=? where id=?
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?
+Hibernate: select todo0_.id as id1_0_, todo0_.desc as desc2_0_, todo0_.is_done as is_done3_0_, todo0_.target_date as target_d4_0_, todo0_.user as user5_0_ from todo todo0_ where todo0_.user=?

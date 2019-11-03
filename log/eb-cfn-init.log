@@ -1,0 +1,249 @@
+[2019-10-28T05:29:04Z] Started EB User Data
++ SLEEP_TIME=10
++ SLEEP_TIME_MAX=3600
++ true
++ curl https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/UserDataScript.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 12536  100 12536    0     0   322k      0 --:--:-- --:--:-- --:--:--  322k
++ RESULT=0
++ [[ 0 -ne 0 ]]
++ /bin/bash /tmp/ebbootstrap.sh https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/aws-elasticbeanstalk-tools-1.20-1.noarch.rpm 'https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/awseb-ruby-2.2.4-x86_64-20160503_1008.tar.gz https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/basehooks.tar.gz' 'https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-2.12.gem https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-healthd-1.1.gem https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/executor-1.2.gem' 'https://cloudformation-waitcondition-us-east-1.s3.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-east-1%3A624204576463%3Astack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892/AWSEBInstanceLaunchWaitHandle?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191028T052404Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIIT3CWAIMJYUTISA%2F20191028%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3ceb7304ccef39befaf1ece4b8536270f38e6375970c79e5a28f1ea1e4b6d788' arn:aws:cloudformation:us-east-1:624204576463:stack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892 us-east-1 f5fc9bfd8c40 8145b040-db16-4b73-8ddb-42d4bc0db880 '' apache ''
+[2019-10-28T05:29:04.683Z] Started EB Bootstrapping Script.
+[2019-10-28T05:29:04.731Z] Received parameters:
+ RPMS = https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/aws-elasticbeanstalk-tools-1.20-1.noarch.rpm
+ TARBALLS = https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/awseb-ruby-2.2.4-x86_64-20160503_1008.tar.gz https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/basehooks.tar.gz
+ EB_GEMS = https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-2.12.gem https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-healthd-1.1.gem https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/executor-1.2.gem
+ SIGNAL_URL = https://cloudformation-waitcondition-us-east-1.s3.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-east-1%3A624204576463%3Astack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892/AWSEBInstanceLaunchWaitHandle?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191028T052404Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIIT3CWAIMJYUTISA%2F20191028%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3ceb7304ccef39befaf1ece4b8536270f38e6375970c79e5a28f1ea1e4b6d788
+ STACK_ID = arn:aws:cloudformation:us-east-1:624204576463:stack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892
+ REGION = us-east-1
+ GUID = f5fc9bfd8c40
+ HEALTHD_GROUP_ID = 8145b040-db16-4b73-8ddb-42d4bc0db880
+ HEALTHD_ENDPOINT = 
+ PROXY_SERVER = apache
+ HEALTHD_PROXY_LOG_LOCATION =
+[2019-10-28T05:29:04.745Z] Synchronizing network time in background.
+[2019-10-28T05:29:04.806Z] yum repo has already been locked to f5fc9bfd8c40.
+[2019-10-28T05:29:04.859Z] yum update has already been done.
+Shutting down ntpd: [2019-10-28T05:29:04.904Z] Completed creating AWS EB users and groups.
+[2019-10-28T05:29:04.911Z] Started executing install_rpms https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/aws-elasticbeanstalk-tools-1.20-1.noarch.rpm.
+[2019-10-28T05:29:04.917Z] Installing RPM: https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/aws-elasticbeanstalk-tools-1.20-1.noarch.rpm.
+[  OK  ]
+[2019-10-28T05:29:05.037Z] aws-elasticbeanstalk-tools-1.20-1.noarch has already been installed. Skip installing.
+[2019-10-28T05:29:05.044Z] Command Returned: 
+[2019-10-28T05:29:05.049Z] Completed executing install_rpms.
+[2019-10-28T05:29:05.054Z] Started executing install_tarballs https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/awseb-ruby-2.2.4-x86_64-20160503_1008.tar.gz https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/basehooks.tar.gz.
+[2019-10-28T05:29:05.083Z] Installing tarball: https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/awseb-ruby-2.2.4-x86_64-20160503_1008.tar.gz.
+[2019-10-28T05:29:05.085Z] awseb-ruby-2.2.4-x86_64-20160503_1008.tar.gz has already been installed. Skip installing.
+[2019-10-28T05:29:05.086Z] Installing tarball: https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/basehooks.tar.gz.
+[2019-10-28T05:29:05.158Z] Command Returned: 
+
+2019-10-28 05:29:05 URL:https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/basehooks.tar.gz [6241/6241] -> "/tmp/basehooks.tar.gz" [1]
+[2019-10-28T05:29:05.173Z] Completed executing install_tarballs.
+[2019-10-28T05:29:05.175Z] Started executing install_eb_gems https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-2.12.gem https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-healthd-1.1.gem https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/executor-1.2.gem.
+[2019-10-28T05:29:05.214Z] Installing EB Gem: https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-2.12.gem.
+[2019-10-28T05:29:05.531Z] beanstalk-core-2.12 has already been installed. Skip installing.
+[2019-10-28T05:29:05.537Z] Installing EB Gem: https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/beanstalk-core-healthd-1.1.gem.
+[2019-10-28T05:29:05.711Z] beanstalk-core-healthd-1.1 has already been installed. Skip installing.
+[2019-10-28T05:29:05.719Z] Installing EB Gem: https://s3.dualstack.us-east-1.amazonaws.com/elasticbeanstalk-env-resources-us-east-1/stalks/eb_tomcat_4.0.1.202473.0_1570882898/lib/executor-1.2.gem.
+[2019-10-28T05:29:05.896Z] executor-1.2 has already been installed. Skip installing.
+[2019-10-28T05:29:05.904Z] Command Returned: 
+[2019-10-28T05:29:05.920Z] Completed executing install_eb_gems.
+[2019-10-28T05:29:05.922Z] Starting healthd
+initctl: Unknown instance: 
+healthd start/running, process 2779
+[2019-10-28T05:29:06.151Z] First init of instance.
+[2019-10-28T05:29:06.162Z] Started executing cfn_init _OnInstanceBoot first_init.
+[2019-10-28T05:29:06.174Z] Running cfn-init ConfigSet: _OnInstanceBoot.
+[2019-10-28T05:29:06.973Z] Command Returned: 
+[2019-10-28T05:29:06.979Z] Completed executing cfn_init.
+[2019-10-28T05:29:07.064Z] Check whether controlled by launch workflow...
+[2019-10-28T05:29:07.565Z] Worflow running.
+[2019-10-28T05:29:07.570Z] Workflow controlled instance. Running container provisioning...
+[2019-10-28T05:29:07.576Z] Started executing start_cfn_hup.
+[2019-10-28T05:29:07.582Z] Starting cfn-hup.
+[2019-10-28T05:29:07.594Z] Command Returned: cfn-hup start/running, process 2857
+[2019-10-28T05:29:07.602Z] Completed executing start_cfn_hup.
+[2019-10-28T05:29:07.614Z] Started executing run_eb_command { "api_version" : "1.0", "request_id": "0", "command_name": "CMD-PreInit" } .
+[2019-10-28T05:29:07.626Z] Running EB Command: { "api_version" : "1.0", "request_id": "0", "command_name": "CMD-PreInit" } .
+[2019-10-28T05:29:13.485Z] Command Returned: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2019-10-28T05:29:13.493Z] Completed executing run_eb_command.
+[2019-10-28T05:29:13.498Z] Successfully bootstrapped instance.
+[2019-10-28T05:29:13.596Z] Sending signal 0 to CFN wait condition https://cloudformation-waitcondition-us-east-1.s3.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-east-1%3A624204576463%3Astack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892/AWSEBInstanceLaunchWaitHandle?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191028T052404Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIIT3CWAIMJYUTISA%2F20191028%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3ceb7304ccef39befaf1ece4b8536270f38e6375970c79e5a28f1ea1e4b6d788
+28 Oct 05:29:15 ntpdate[2709]: adjust time server 98.152.165.38 offset -0.005415 sec
+Starting ntpd: [  OK  ]
+CloudFormation signaled successfully with SUCCESS.
+[2019-10-28T05:29:29.360Z] Tailing /var/log/eb-commandprocessor.log
+
+******************* eb-commandprocessor taillog *******************
+[2019-10-28T05:29:07.946Z] DEBUG [2867]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2019-10-28T05:29:07.946Z] DEBUG [2867]  : Checking if the command processor should execute...
+[2019-10-28T05:29:07.951Z] DEBUG [2867]  : Checking whether the command is applicable to instance (i-0970305c7bc0ce750)..
+[2019-10-28T05:29:07.951Z] INFO  [2867]  : Command is applicable to this instance (i-0970305c7bc0ce750)..
+[2019-10-28T05:29:07.951Z] DEBUG [2867]  : Checking if the received command stage is valid..
+[2019-10-28T05:29:07.951Z] INFO  [2867]  : No stage_num in command. Valid stage..
+[2019-10-28T05:29:07.951Z] INFO  [2867]  : Received command CMD-PreInit: {"api_version"=>"1.0", "request_id"=>"0", "command_name"=>"CMD-PreInit"}
+[2019-10-28T05:29:07.951Z] INFO  [2867]  : Command processor should execute command.
+[2019-10-28T05:29:07.951Z] DEBUG [2867]  : Storing current stage..
+[2019-10-28T05:29:07.951Z] DEBUG [2867]  : Stage_num does not exist. Not saving null stage. Returning..
+[2019-10-28T05:29:07.951Z] DEBUG [2867]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2019-10-28T05:29:07.951Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2019-10-28T05:29:07.952Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2019-10-28T05:29:07.952Z] INFO  [2867]  : Found enabled addons: ["logpublish", "logstreaming"].
+[2019-10-28T05:29:07.953Z] INFO  [2867]  : Updating Command definition of addon logpublish.
+[2019-10-28T05:29:07.953Z] INFO  [2867]  : Updating Command definition of addon logstreaming.
+[2019-10-28T05:29:07.953Z] DEBUG [2867]  : Refreshing metadata...
+[2019-10-28T05:29:07.958Z] DEBUG [2867]  : Using cached environment metadata.
+[2019-10-28T05:29:07.958Z] INFO  [2867]  : Recreated directory /opt/elasticbeanstalk/deploy/configuration/.
+[2019-10-28T05:29:07.958Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_AppSourceUrlFileContent||url..
+[2019-10-28T05:29:07.959Z] INFO  [2867]  : Created appsource url file at /opt/elasticbeanstalk/deploy/configuration/appsourceurl.
+[2019-10-28T05:29:07.959Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent..
+[2019-10-28T05:29:07.960Z] INFO  [2867]  : Created container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2019-10-28T05:29:07.960Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2019-10-28T05:29:07.961Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2019-10-28T05:29:07.961Z] INFO  [2867]  : Found enabled addons: ["logpublish", "logstreaming"].
+[2019-10-28T05:29:07.966Z] INFO  [2867]  : Updating Command definition of addon logpublish.
+[2019-10-28T05:29:07.966Z] INFO  [2867]  : Updating Command definition of addon logstreaming.
+[2019-10-28T05:29:07.966Z] DEBUG [2867]  : Retrieving metadata for key: AWS::CloudFormation::Init||Infra-WriteApplication2||files..
+[2019-10-28T05:29:07.967Z] DEBUG [2867]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||ManifestFileS3Key..
+[2019-10-28T05:29:08.213Z] INFO  [2867]  : Finding latest manifest from bucket 'elasticbeanstalk-us-east-1-624204576463' with prefix 'resources/environments/e-xepdcsc72m/_runtime/versions/manifest_'.
+[2019-10-28T05:29:08.354Z] INFO  [2867]  : Found manifest with key 'resources/environments/e-xepdcsc72m/_runtime/versions/manifest_1572240239081'.
+[2019-10-28T05:29:08.366Z] INFO  [2867]  : Updated manifest cache: deployment ID 1 and serial 1.
+[2019-10-28T05:29:08.366Z] DEBUG [2867]  : Loaded definition of Command CMD-PreInit.
+[2019-10-28T05:29:08.366Z] INFO  [2867]  : Executing Initialization
+[2019-10-28T05:29:08.366Z] INFO  [2867]  : Executing command: CMD-PreInit...
+[2019-10-28T05:29:08.366Z] INFO  [2867]  : Executing command CMD-PreInit activities...
+[2019-10-28T05:29:08.366Z] DEBUG [2867]  : Setting environment variables..
+[2019-10-28T05:29:08.366Z] INFO  [2867]  : Running AddonsBefore for command CMD-PreInit...
+[2019-10-28T05:29:11.084Z] DEBUG [2867]  : Running stages of Command CMD-PreInit from stage 0 to stage 0...
+[2019-10-28T05:29:11.085Z] INFO  [2867]  : Running stage 0 of command CMD-PreInit...
+[2019-10-28T05:29:11.085Z] DEBUG [2867]  : Loaded 2 actions for stage 0.
+[2019-10-28T05:29:11.085Z] INFO  [2867]  : Running 1 of 2 actions: DownloadSourceBundle...
+[2019-10-28T05:29:12.055Z] INFO  [2867]  : Running 2 of 2 actions: PreInitHook...
+[2019-10-28T05:29:13.470Z] INFO  [2867]  : Running AddonsAfter for command CMD-PreInit...
+[2019-10-28T05:29:13.470Z] INFO  [2867]  : Command CMD-PreInit succeeded!
+[2019-10-28T05:29:13.470Z] INFO  [2867]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+******************* End of taillog *******************
+
+
+[2019-10-28T05:29:29.383Z] Tailing /var/log/eb-activity.log
+
+******************* eb-activity taillog *******************
+  ++ /opt/elasticbeanstalk/bin/get-config container -k tomcat_version
+  + TOMCAT_VERSION=8.5
+  + '[' 8.5 == 8.5 ']'
+  + TOMCAT_VERSION=8
+  + TOMCAT_NAME=tomcat8
+  + TOMCAT_HOME=/usr/share/tomcat8
+  + TOMCAT_CONF_HOME=/etc/tomcat8
+  + SET_LIMIT_SH=/etc/elasticbeanstalk/set-ulimit.sh
+  + echo 'Patching Tomcat 8 startup scripts'
+  Patching Tomcat 8 startup scripts
+  + '[' -f /opt/elasticbeanstalk/containerfiles/tomcat-elasticbeanstalk ']'
+  + echo 'Installing tomcat-elasticbeanstalk script'
+  Installing tomcat-elasticbeanstalk script
+  + /bin/mv /opt/elasticbeanstalk/containerfiles/tomcat-elasticbeanstalk /usr/sbin
+  + /bin/chown root:root /usr/sbin/tomcat-elasticbeanstalk
+  + /bin/chmod 755 /usr/sbin/tomcat-elasticbeanstalk
+  + echo 'Fixing Tomcat 8 init.d script'
+  Fixing Tomcat 8 init.d script
+  + /bin/sed -i -e 's/\/usr\/sbin\/tomcat8/\/usr\/sbin\/tomcat-elasticbeanstalk/g' /etc/init.d/tomcat8
+  + grep -q /etc/elasticbeanstalk/set-ulimit.sh
+  + cat /etc/init.d/tomcat8
+  + sed -i '/function start() {/a \ \ \ if [ -f /etc/elasticbeanstalk/set-ulimit.sh ]; then . /etc/elasticbeanstalk/set-ulimit.sh; fi' /etc/init.d/tomcat8
+  + echo 'Adding X-Forwarded-Proto valve'
+  Adding X-Forwarded-Proto valve
+  + /bin/sed -i -e '/<\/Host>/ i\
+      <Valve className="org.apache.catalina.valves.RemoteIpValve" protocolHeader="X-Forwarded-Proto" internalProxies="10\.\d+\.\d+\.\d+|192\.168\.\d+\.\d+|169\.254\.\d+\.\d+|127\.\d+\.\d+\.\d+|172\.(1[6-9]|2[0-9]|3[0-1])\.\d+\.\d+" \/>
+  ' /etc/tomcat8/server.xml
+  + echo 'Setting UTF-8 support'
+  Setting UTF-8 support
+  + grep -q 'Elastic Beanstalk' /etc/tomcat8/server.xml
+  + sed -i '1 a\<!-- Elastic Beanstalk Maintained -->' /etc/tomcat8/server.xml
+  + sed -i 's/<Connector port=\"8080\" protocol=\"HTTP\/1.1\"/&
+               URIEncoding="UTF-8"/g' /etc/tomcat8/server.xml
+  + ln -sf /usr/share/java/apache-commons-pool.jar /usr/share/tomcat8/lib/
+[2019-10-28T05:29:13.372Z] INFO  [2867]  - [Initialization/PreInitStage0/PreInitHook/03processmgrsetup.sh] : Starting activity...
+[2019-10-28T05:29:13.469Z] INFO  [2867]  - [Initialization/PreInitStage0/PreInitHook/03processmgrsetup.sh] : Completed activity. Result:
+  ++ /opt/elasticbeanstalk/bin/get-config container -k tomcat_version
+  + TOMCAT_VERSION=8.5
+  + '[' 8.5 == 8.5 ']'
+  + TOMCAT_VERSION=8
+  + MONIT_TOMCAT_CONF=monit-tomcat8.conf
+  + /bin/cp -f /opt/elasticbeanstalk/containerfiles/monit-tomcat8.conf /etc/monit.d/
+  + chmod 0600 /etc/monit.d/monit-tomcat8.conf
+[2019-10-28T05:29:13.469Z] INFO  [2867]  - [Initialization/PreInitStage0/PreInitHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/preinit.
+[2019-10-28T05:29:13.469Z] INFO  [2867]  - [Initialization/PreInitStage0] : Completed activity. Result:
+  Initialization - Command CMD-PreInit stage 0 completed
+[2019-10-28T05:29:13.470Z] INFO  [2867]  - [Initialization/AddonsAfter] : Starting activity...
+[2019-10-28T05:29:13.470Z] INFO  [2867]  - [Initialization/AddonsAfter] : Completed activity.
+[2019-10-28T05:29:13.470Z] INFO  [2867]  - [Initialization] : Completed activity. Result:
+  Initialization - Command CMD-PreInit succeeded
+******************* End of taillog *******************
+
+
+[2019-10-28T05:29:29.396Z] Tailing /var/log/eb-tools.log
+
+******************* eb-tools taillog *******************
+***eb-tools is not available yet.***
+******************* End of taillog *******************
+
+
+[2019-10-28T05:29:29.398Z] Tailing /var/log/eb-version-deployment.log
+
+******************* eb-version-deployment taillog *******************
+***eb-version-deployment is not available yet.***
+******************* End of taillog *******************
+
+
+[2019-10-28T05:29:29.410Z] Tailing /var/log/cfn-init.log
+
+******************* cfn-init taillog *******************
+2019-10-28 05:29:06,811 [INFO] -----------------------Starting build-----------------------
+2019-10-28 05:29:06,817 [INFO] Running configSets: _OnInstanceBoot
+2019-10-28 05:29:06,820 [INFO] Running configSet _OnInstanceBoot
+2019-10-28 05:29:06,825 [INFO] Running config AWSEBBaseConfig
+2019-10-28 05:29:06,831 [INFO] Command clearbackupfiles succeeded
+2019-10-28 05:29:06,836 [INFO] Running config AWSEBMessageOfTheDay
+2019-10-28 05:29:06,841 [INFO] Command 01clearoriginal succeeded
+2019-10-28 05:29:06,845 [INFO] Command 02createbanner succeeded
+2019-10-28 05:29:06,857 [INFO] Command 03updatebanner succeeded
+2019-10-28 05:29:06,863 [INFO] Running config AWSEBULimitConfig
+2019-10-28 05:29:06,867 [INFO] Command 00removebackup succeeded
+2019-10-28 05:29:06,873 [INFO] Running config Infra-InstallContainerHooksPkg
+2019-10-28 05:29:06,877 [INFO] Command 00mkdir succeeded
+2019-10-28 05:29:06,913 [INFO] Command 01download_container_hooks succeeded
+2019-10-28 05:29:06,922 [INFO] Command 02install_container_hooks succeeded
+2019-10-28 05:29:06,926 [INFO] Command 03cleanup succeeded
+2019-10-28 05:29:06,931 [INFO] Running config Infra-WriteLeaderTestScript
+2019-10-28 05:29:06,936 [INFO] Running config Infra-WriteTailLogsConf
+2019-10-28 05:29:06,941 [INFO] Running config Infra-WriteSystemTailLogsConf
+2019-10-28 05:29:06,946 [INFO] Running config Infra-WriteBundleLogsConf
+2019-10-28 05:29:06,951 [INFO] Running config Infra-WritePublishLogsConf
+2019-10-28 05:29:06,955 [INFO] Running config Infra-WritePublishLogsCron
+2019-10-28 05:29:06,957 [INFO] ConfigSets completed
+2019-10-28 05:29:06,957 [INFO] -----------------------Build complete-----------------------
+******************* End of taillog *******************
+
+
+[2019-10-28T05:29:29.420Z] Tailing /var/log/cfn-hup.log
+
+******************* cfn-hup taillog *******************
+2019-10-28 05:29:08,108 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.us-east-1.amazonaws.com
+2019-10-28 05:29:08,109 [DEBUG] SQS client initialized with endpoint https://queue.amazonaws.com
+2019-10-28 05:29:08,109 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.us-east-1.amazonaws.com
+2019-10-28 05:29:08,109 [DEBUG] Enabled single threading mode.
+2019-10-28 05:29:08,109 [DEBUG] Creating /var/lib/cfn-hup/data
+2019-10-28 05:29:08,120 [INFO] No umask value specified in config file. Using the default one: 022
+2019-10-28 05:29:08,136 [DEBUG] Registering listener i-0970305c7bc0ce750 for stack arn:aws:cloudformation:us-east-1:624204576463:stack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892
+2019-10-28 05:29:08,651 [INFO] Refreshing listener credentials
+2019-10-28 05:29:08,651 [DEBUG] Get listener credentials for listener i-0970305c7bc0ce750 in stack arn:aws:cloudformation:us-east-1:624204576463:stack/awseb-e-xepdcsc72m-stack/255a22e0-f943-11e9-8a51-0a4f04019892
+2019-10-28 05:29:08,766 [INFO] Scheduling next credential refresh in 7200 seconds
+2019-10-28 05:29:08,768 [DEBUG] Receiving messages for queue https://queue.amazonaws.com/668920780829/e1751b172afa501acaf4262fb527d7a258aa82ed0fd226cc03689bebb7af59d5
+******************* End of taillog *******************
+
+
+[2019-10-28T05:29:29.429Z] Completed EB Bootstrapping Script.
++ exit 0

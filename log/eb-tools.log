@@ -1,0 +1,51 @@
+2019-10-28 05:49:12,086 [INFO] (5678 MainThread) [tailLogs.py-56] [root tailLogs main] Starting tail logs task with batch id b7369a8d-3604-4e99-b539-993ee70d24f6
+2019-10-28 05:49:12,092 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/catalina.out
+2019-10-28 05:49:12,099 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/httpd/elasticbeanstalk-access_log
+2019-10-28 05:49:12,102 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/localhost_access_log.txt
+2019-10-28 05:49:12,102 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/httpd/error_log
+2019-10-28 05:49:12,103 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/tomcat8-initd.log
+2019-10-28 05:49:12,103 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/manager.2019-10-28.log
+2019-10-28 05:49:12,110 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/httpd/access_log
+2019-10-28 05:49:12,110 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/localhost.2019-10-28.log
+2019-10-28 05:49:12,111 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/host-manager.2019-10-28.log
+2019-10-28 05:49:12,113 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/eb-activity.log
+2019-10-28 05:49:12,116 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/tomcat8/catalina.2019-10-28.log
+2019-10-28 05:49:12,116 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/httpd/elasticbeanstalk-error_log
+2019-10-28 05:49:12,119 [INFO] (5678 MainThread) [upload_tools.py-293] [root upload_tools execute] Successfully tailed file /var/log/eb-commandprocessor.log
+2019-10-28 05:49:12,234 [INFO] (5678 MainThread) [s3_tools.py-208] [root s3_tools _process_result] Received status code 200 with text: 
+2019-10-28 05:49:12,234 [INFO] (5678 MainThread) [upload_tools.py-317] [root upload_tools __exit__] Successfully uploaded tailed content for 13 files to s3 at location resources/environments/logs/tail/e-xepdcsc72m/i-0970305c7bc0ce750/TailLogs-1572241752119.out
+2019-10-28 05:49:12,234 [INFO] (5678 MainThread) [tailLogs.py-92] [root tailLogs main] [Instance: i-0970305c7bc0ce750] Successfully finished tailing 13 log(s)
+2019-10-28 05:52:42,532 [INFO] (5787 MainThread) [bundleLogs.py-54] [root bundleLogs main] Starting bundle logs task with batch id b2b406f0-a301-4337-babe-7f5c9001e04c
+2019-10-28 05:52:42,539 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/eb-tools.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,539 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cfn-init-cmd.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,539 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/localhost_access_log.txt to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,540 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/eb-cfn-init-call.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,540 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cfn-init.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,541 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/eb-commandprocessor.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,541 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/yum.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,541 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/manager.2019-10-28.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,541 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cloud-init-output.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,542 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/host-manager.2019-10-28.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,542 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/eb-cfn-init.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,543 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/healthd/daemon.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,543 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/catalina.2019-10-28.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,543 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/httpd/elasticbeanstalk-error_log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,545 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/messages to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,546 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cfn-hup.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,546 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/tomcat8-initd.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,547 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/httpd/access_log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,547 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/localhost.2019-10-28.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,548 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/eb-publish-logs.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,549 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/tomcat8/catalina.out to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,550 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/httpd/elasticbeanstalk-access_log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,550 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/httpd/error_log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,550 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cron to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,553 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/eb-activity.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,553 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cfn-wire.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,554 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/cloud-init.log to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,555 [INFO] (5787 MainThread) [upload_tools.py-364] [root upload_tools execute] Successfully archived file /var/log/monit to /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,687 [INFO] (5787 MainThread) [s3_tools.py-208] [root s3_tools _process_result] Received status code 200 with text: 
+2019-10-28 05:52:42,687 [INFO] (5787 MainThread) [upload_tools.py-395] [root upload_tools __exit__] Successfully uploaded archive file /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip to s3 at location resources/environments/logs/bundle/e-xepdcsc72m/i-0970305c7bc0ce750/BundleLogs-1572241962555.zip
+2019-10-28 05:52:42,687 [INFO] (5787 MainThread) [upload_tools.py-404] [root upload_tools __exit__] Successfully deleted archive file /tmp/BundleLogs-b2b406f0-a301-4337-babe-7f5c9001e04c.zip
+2019-10-28 05:52:42,687 [INFO] (5787 MainThread) [bundleLogs.py-82] [root bundleLogs main] [Instance: i-0970305c7bc0ce750] Successfully finished bundling 28 log(s)
+2019-10-28 05:57:04,075 [INFO] (5987 MainThread) [bundleLogs.py-54] [root bundleLogs main] Starting bundle logs task with batch id d32fd9cd-a871-49e6-9229-9d427a7f911b
